@@ -1,26 +1,31 @@
 .container{ border-radius: 10px;
 padding: 100px;
-background: gray;
-color: pink;}
+margin: 50px auto;
+background: grey;
+color: pink;
+max-width: 600px;}
+
+h1{ text-align: right;
+}
 
 
-h1{ color: pink;
-font-weight: 600;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    padding-bottom: 30px;
-text-align: left;}
+#inputPassword5{ 
+background:white;
+color: pink;
+padding:10px ;
+margin:0 auto;
+}
 
-#search-form{ border: 10px;}
-input{ padding:13px ;
-    margin:30px,30px;
-border-radius: 10px;
-border-color: hotpink;}
 
 .col-6{ text-align: left;
 color: pink;
 font-size:40px ;
-padding-top: 10px;}
+padding-top: 10px;
+font-family: 'Times New Roman', Times, serif;}
  
 #enter-btn{ display: inline-block;
     background: pink;
 color: white}
+
+.col-4{ font-family: 'Times New Roman', Times, serif;
+font-size: 15px;}
