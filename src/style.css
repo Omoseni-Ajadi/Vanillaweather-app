@@ -1,1 +1,26 @@
-h1{ color: hotpink;}
+.container{ border-radius: 10px;
+padding: 100px;
+background: gray;
+color: pink;}
+
+
+h1{ color: pink;
+font-weight: 600;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    padding-bottom: 30px;
+text-align: left;}
+
+#search-form{ border: 10px;}
+input{ padding:13px ;
+    margin:30px,30px;
+border-radius: 10px;
+border-color: hotpink;}
+
+.col-6{ text-align: left;
+color: pink;
+font-size:40px ;
+padding-top: 10px;}
+ 
+#enter-btn{ display: inline-block;
+    background: pink;
+color: white}
