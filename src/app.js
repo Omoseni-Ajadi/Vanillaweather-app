@@ -17,6 +17,8 @@ function displayTemperature(response)
  cityElement.innerHTML=response.data.name
  let dateElement = document.querySelector("#date");
  dateElement.innerHTML= formatDate(response.data.dt * 1000)
+let iconElement=document.querySelector("#icon");
+iconElement.innerHTML
 }
     
 
