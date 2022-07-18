@@ -1,5 +1,5 @@
-let city = "Lagos";
-console.log (city);
+let city = "Ibadan";
+
 let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=80ff361a9abbe8fa49fbda8c10a59397&units=metric`;
 
 function formatDate(timestamp) {let date= new Date(timestamp);
@@ -24,9 +24,9 @@ descriptionElement.innerHTML=response.data.weather[0].description
 iconElement.setAttribute("src",
 `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`);
 let humidityElement= document.querySelector("#humidity");
-humidityElement.innerHTML=response.data.main.humidity
-
-}
+humidityElement.innerHTML=response.data.main.humidity;
+let windElement = document.querySelector("#wind");
+windElement.innerHTML= Math.round(response.data.wind.speed);}
     
 
 
