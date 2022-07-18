@@ -1,9 +1,10 @@
 .container{ border-radius: 10px;
 padding: 100px;
-margin: 50px auto;
+margin: 20px auto;
 background: grey;
 color: pink;
-max-width: 600px;}
+max-width: 600px;
+}
 
 h1{ text-align: right;
 }
@@ -30,6 +31,20 @@ color: white}
 .col-4{ font-family: 'Times New Roman', Times, serif;
 font-size: 20px;}
 
+
+
+#description{ font-family: 'Times New Roman', Times, serif;
+font-size: 20px;}
+
+li{ text-align: right;
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+list-style:none ;}
+
+
+
 footer{ font-size: 15px;
     font-family: 'Times New Roman', Times, serif}
-#id{ color-scheme: white;}
+
+    #git-link{text-decoration: none;
+    color: whitesmoke;}

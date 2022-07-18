@@ -1,5 +1,6 @@
-
-let apiUrl = "https://api.openweathermap.org/data/2.5/weather?q=London&appid=80ff361a9abbe8fa49fbda8c10a59397&units=metric";
+let city = "Lagos";
+console.log (city);
+let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=80ff361a9abbe8fa49fbda8c10a59397&units=metric`;
 
 function formatDate(timestamp) {let date= new Date(timestamp);
 let hours = date.getHours();
@@ -17,9 +18,16 @@ function displayTemperature(response)
  cityElement.innerHTML=response.data.name
  let dateElement = document.querySelector("#date");
  dateElement.innerHTML= formatDate(response.data.dt * 1000)
-let iconElement=document.querySelector("#icon");
-iconElement.innerHTML
+let descriptionElement = document.querySelector("#description")
+descriptionElement.innerHTML=response.data.weather[0].description
+ let iconElement=document.querySelector("#icon");
+iconElement.setAttribute("src",
+`http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`);
+let humidityElement= document.querySelector("#humidity");
+humidityElement.innerHTML=response.data.main.humidity
+
 }
     
+
 
 axios.get(apiUrl).then(displayTemperature);
