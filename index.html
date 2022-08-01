@@ -16,31 +16,44 @@
   <h1>
     <img src="weather.svg" alt="" srcset="" width="150">
   </h1>  
-    
-<input type="text" placeholder= "Enter city here.."id="inputPassword5" class="form-control" aria-describedby="passwordHelpBlock">    
-<button type="button" class=" btn btn-secondary" id="enter-btn"> Search</button>
-
+  <div class="row">
+    <div class="col-9">
+    <form id="search-form">
+<input type="text"
+ placeholder= "Enter city here.."
+ autocomplete="off"
+ id="input-city" class="form-control" aria-describedby="passwordHelpBlock">    
+</div>
+<div class="col-3">
+<input type="button" value="search" class=" btn btn-secondary w-100" id="enter-btn"> 
+</form>
+</div>
+</div>
 <hr>
 <div class="row">
-  <div class="col-6" id="city">
+  <div class="col-8" id="city">
       Ibadan
   </div> 
-  <div class="col-6" id="temp">
-    23 ℃   
+  <div class="col-4" id="temp">
+    23 ℃ 
+
 </div> 
 
 
-<div class="col-4" id="date">
+<div class="col-3" id="date">
   
   Friday 21:24
   
 </div> 
+<div class="col-9" id="image">
+  <img src="https://openweathermap.org/img/wn/04n@2x.png" alt="clear" srcset="" id="icon">
+</div>
+
 <p id="description">
 clear sky
 </p>
-<div class="col-6" id="image">
-  <img src="http://openweathermap.org/img/wn/04n@2x.png" alt="clear" srcset="" id="icon">
-</div>
+
+
  
 <ul>
   <li>Wind: 
@@ -58,12 +71,19 @@ clear sky
 </ul>
 
 <hr>
-      <script src="src/app.js"></script>
+
+
       
-     <footer>
+<div id="forecast">
+  
+</div>
+  
+ <hr>    
+<footer>
        This page was coded by Omoseni Ajadi, <a href="https://github.com/Omoseni-Ajadi/Vanillaweather-app.git" id="git-link"> Open source on GitHub</a>
      <a href="https://zippy-queijadas-7cda32.netlify.app/" id="net-link">, hosted on Netlify.</a>
       </footer> 
     </div>
+    <script src="src/app.js"></script>
     </body>
 </html>
