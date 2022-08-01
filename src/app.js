@@ -29,8 +29,13 @@ let humidityElement= document.querySelector("#humidity");
 humidityElement.innerHTML=response.data.main.humidity;
 
 let windElement = document.querySelector("#wind");
-windElement.innerHTML= Math.round(response.data.wind.speed);}
+windElement.innerHTML= Math.round(response.data.wind.speed);
+}
 
+function getForecast(coordinates) {
+    let apiUrl=`https://api.openweathermap.org/data/3.0/onecall?lat=${coordinates.lat}&lon=${coordinates.lon}&exclude={part}&appid=80ff361a9abbe8fa49fbda8c10a59397&units=metric`  
+}
+getForecast(response.data.coord);
 
 function displayForecast(params) {
      let forecastElement = document.querySelector("#forecast");
